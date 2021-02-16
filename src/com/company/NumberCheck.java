@@ -25,7 +25,7 @@ public class NumberCheck {
             if (currentChar == ')' || currentChar == '(' || currentChar == ' ') {
                 bracketsOrSpaces = true;
                 isCorrected = true;
-            } else if (currentChar == '+' && newNumber == "") {
+            } else if (currentChar == '+' && newNumber.equals("")) {
                 newNumber += currentChar;
             } else if (currentChar > '\u0039' || currentChar < '\u0030') {
                 badChars = true;
